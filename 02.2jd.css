@@ -1,0 +1,49 @@
+body{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color:#666;
+}
+
+#top_main,#nav,#content,#shopping_instructure,#footer{
+	border:1px solid grey;
+	width:1212px;
+	height: 18px;
+	margin: 0px auto;
+	font-size: 12px;
+}
+/*设置header的宽度为1212px*/
+#top{
+	width: 1212px;
+	margin: 0px auto;
+}
+/*设置top中的top_box的宽度达到最大*/
+#top .top_box{
+	width: 100%;
+}
+/*使收藏京东和图片左浮动*/
+.top_box>(img,a){
+	float: left;
+}
+/*设置ul整体右浮动*/
+.nav_info{
+	margin-top: 0px;
+	float: right;
+}
+/*坑：对于包裹在li中的a,直接操作li浮动比较好*/
+/*设置好ul整体左浮动后，在设置ul里面元素靠左浮动（这里设置靠右浮动内容顺序会因为元素在ul里面从右往左排列）*/
+.nav_info li{
+	float: left;
+}
+.nav_info li{
+	list-style: none;
+}
+#top .top_box a{
+	/*此处设置所有的a标签颜色*/
+	color:grey;
+	text-decoration:none;
+}
+
+#top .top_box a:hover{
+	color:red;
+	text-decoration:underline;
+}
