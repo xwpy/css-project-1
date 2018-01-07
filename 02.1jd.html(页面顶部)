@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>jd</title>
-	<link rel="stylesheet" href="01jd.css">
+	<link rel="stylesheet" href="jd.css">
 </head>
 <body>
 	<header id="top">
 		<div class="top_box">
-			<img  src="images/images_pj/star.jpg" alt="five_angle_start">
+			<img  src="Images/star.jpg" alt="five_angle_start">
 			<a href="#">收藏京东</a>
 			<ul class="nav_info">
 				<li class="sign">
@@ -16,13 +17,21 @@
 					<a class="sign_up" href="">[登录]</a>
 					<a class="sign_in" href="">[注册]</a>
 				</li>
-				<li>
+				<li class="order">
 					<a href="">我的订单</a>
 				</li>
-				<li><a href="">会员俱乐部</a></li>
+				<li class="vip">
+					<a href="">会员俱乐部</a>
+				</li>
 				<li><a href="">企业频道</a></li>
-				<li><a href="">手机京东</a></li>
-				<li><a href="">客户服务</a></li>
+				<li class="jd_mob"><a href="">手机京东</a></li>
+				<li class="services">
+					<a href="">客户服务</a>
+					<!-- 此处设置的是客户服务的下拉内容 -->
+					<ul class="services_items">
+						<li><a href="">帮助中心</a></li>
+					</ul>
+				</li>
 				<li><a href="">网站导航</a></li>
 			</ul>
 		</div>
@@ -34,4 +43,4 @@
 	<div id="shopping_instructure">购物指南</div>
 	<footer id="footer">页面底部</footer>
 </body>
-</html>
+</html
