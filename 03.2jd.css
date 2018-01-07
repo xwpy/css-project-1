@@ -1,0 +1,134 @@
+body{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color:#666;
+}
+
+#top_main,#nav,#content,#shopping_instructure,#footer{
+	border:1px solid grey;
+	width:1212px;
+	height: 18px;
+	margin: 0px auto;
+	font-size: 12px;
+}
+/*设置header的宽度为1212px*/
+#top{
+	width: 100%; 
+	background:#f7f7f7;
+	border-bottom:1px solid #eee;
+	margin-top: -9px;
+	height: 30px;
+	/*想要内容垂直居中，须与框高度一致*/
+	line-height: 30px;
+}
+/*设置top中的top_box的宽度达到最大*/
+#top .top_box{
+	width: 1212px;
+	margin: 0px auto;
+
+}
+/*使收藏京东和图片左浮动*/
+.top_box>(img,a){
+	float: left;
+}
+/*设置ul整体右浮动*/
+.nav_info{
+	margin-top: 0px;
+	float: right;
+}
+/*坑：对于包裹在li中的a,直接操作li浮动比较好*/
+/*设置好ul整体左浮动后，在设置ul里面元素靠左浮动（这里设置靠右浮动内容顺序会因为元素在ul里面从右往左排列）*/
+.nav_info li{
+	float: left;
+	list-style: none;
+}
+#top .top_box a{
+	/*此处设置所有的a标签颜色*/
+	color:grey;
+	text-decoration:none;
+}
+
+#top .top_box a:hover{
+	color:red;
+	text-decoration:underline;
+}
+.nav_info .order{
+	padding-right: 35px;
+}
+
+/*此处设置导航栏边框*/
+.nav_info li a{
+	border-left: 1px solid #ddd;
+	padding: 0 5px;
+}
+/*设置客户服务的边框为0*/
+.nav_info li.services a{
+	border-left: 0px;
+}
+
+/*设置客户为内联块元素，以便设置高度*/
+li.services>a{
+	display:inline-block;
+	height:26px;
+	line-height:26px;
+	/*设置边框透明*/
+	border:1px solid transparent;
+}
+/*设置帮助中心与客户服务对齐*/
+li.services ul.services_items a{
+	margin-left: -39px;
+}
+
+
+li.vip a{
+	/*扩大左内边距以适应vip图片*/
+    padding-left:28px;
+	background:url(Images/vip.jpg) no-repeat 4px center;
+}
+
+/*设置手机京东的图片*/
+li.jd_mob {
+	padding-left: 8px;
+	background:url(Images/iconlist_2.png) no-repeat -128px -356px;
+}
+
+li.jd_mob:hover{
+	padding-left: 8px;
+	background:url(Images/iconlist_2.png) no-repeat -128px -396px;
+}
+
+/*取消手机京东上面的左边框*/
+li.jd_mob a{
+	border-left: 0px solid red;
+}
+
+li.services>a{
+	padding-right: 19px;
+	background:url(Images/jt_down.jpg) no-repeat right center;
+}
+
+/*设置客户服务及其子链被鼠标悬浮的变化*/
+li.services>a:hover{
+	background-color:#fff;
+	background:url(Images/jt_up.jpg) no-repeat right center;
+
+}
+
+/*此处设置定位，来做下拉框*/
+li.services{
+	position: relative;
+}
+
+/*此处设置下拉框*/
+ul.services_items{
+	/*设置position为absolute之后就是内联块了*/
+	position: absolute;
+	border:1px solid #ddd;
+	background-color: #fff;
+	border-top: none;
+	display:none;
+ }
+
+ul.services_items a{
+	padding: 0px 10px;
+}
