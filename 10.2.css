@@ -1,0 +1,396 @@
+body{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color:#666;
+}
+
+#nav, #banner,#content,#shopping_instructure,#footer{
+	border:1px solid grey;
+	width:1212px;
+	margin: 0px auto;
+	font-size: 12px;
+}
+/*设置header的宽度为1212px*/
+#top{
+	width: 100%; 
+	background:#f7f7f7;
+	border-bottom:1px solid #eee;
+	margin-top: -9px;
+	height: 30px;
+	/*想要内容垂直居中，须与框高度一致*/
+	line-height: 30px;
+}
+/*设置top中的top_box的宽度达到最大*/
+#top .top_box{
+	width: 1212px;
+	margin: 0px auto;
+
+}
+/*使收藏京东和图片左浮动*/
+.top_box>(img,a){
+	float: left;
+}
+/*设置ul整体右浮动*/
+.nav_info{
+	margin-top: 0px;
+	float: right;
+}
+/*坑：对于包裹在li中的a,直接操作li浮动比较好*/
+/*设置好ul整体左浮动后，在设置ul里面元素靠左浮动（这里设置靠右浮动内容顺序会因为元素在ul里面从右往左排列）*/
+.nav_info li{
+	float: left;
+	list-style: none;
+}
+#top .top_box a{
+	/*此处设置所有的a标签颜色*/
+	color:grey;
+	text-decoration:none;
+}
+
+#top .top_box a:hover{
+	color:red;
+	text-decoration:underline;
+}
+.nav_info .order{
+	padding-right: 35px;
+}
+
+/*此处设置导航栏边框*/
+.nav_info li a{
+	border-left: 1px solid #ddd;
+	padding: 0 5px;
+}
+/*设置客户服务的边框为0*/
+.nav_info li.services a{
+	border-left: 0px;
+}
+
+/*设置客户为内联块元素，以便设置高度*/
+li.services>a{
+	display:inline-block;
+	height:26px;
+	line-height:26px;
+	/*设置边框透明*/
+	border:1px solid transparent;
+}
+/*设置帮助中心与客户服务对齐*/
+li.services ul.services_items a{
+	margin-left: -39px;
+}
+
+
+li.vip a{
+	/*扩大左内边距以适应vip图片*/
+    padding-left:28px;
+	background:url(Images/vip.jpg) no-repeat 4px center;
+}
+
+/*设置手机京东的图片*/
+li.jd_mob {
+	padding-left: 8px;
+	background:url(Images/iconlist_2.png) no-repeat -128px -356px;
+}
+
+li.jd_mob:hover{
+	padding-left: 8px;
+	background:url(Images/iconlist_2.png) no-repeat -128px -396px;
+}
+
+/*取消手机京东上面的左边框*/
+li.jd_mob a{
+	border-left: 0px solid red;
+}
+
+li.services>a{
+	padding-right: 19px;
+	background:url(Images/jt_down.jpg) no-repeat right center;
+}
+
+/*设置客户服务及其子链被鼠标悬浮的变化*/
+li.services>a:hover{
+	background-color:#fff;
+	background:url(Images/jt_up.jpg) no-repeat right center;
+
+}
+
+/*此处设置定位，来做下拉框*/
+li.services{
+	position: relative;
+}
+
+/*此处设置下拉框*/
+ul.services_items{
+	/*设置position为absolute之后就是内联块了*/
+	position: absolute;
+	border:1px solid #ddd;
+	background-color: #fff;
+	border-top: none;
+	display:none;
+ }
+
+ul.services_items a{
+	padding: 0px 10px;
+}
+#top_main{
+	width: 1212px;
+	margin: 0 auto;
+	border:0px solid red;
+}
+
+
+#top_main .logo_search{
+	/*float: left;*/
+	width: 1212px;
+	border:0px solid yellow;
+	margin:0 80px 0 40px;
+}
+
+/*控制元素的方法
+1，利用定位可以控制元素的位置
+2，margin*/
+/*设置浮动让元素在盒子里面一行排列*/
+#top_main .logo_search input,button{
+	float:left;
+}
+#top_main .logo_search .logo,.shopping,.myjd{
+	float: left;
+}
+/*设置搜索框和按钮的位置*/
+#top_main .logo_search input,button{
+	position: relative;
+	left:40px;
+}
+/*设置搜索框的样式*/
+#top_main .logo_search .search input{
+	width: 416px;
+	height: 36px;
+	border:3px solid red;
+}
+/*设置搜按钮的样式*/
+#top_main .logo_search button{
+	background-color: red;
+	border:3px solid red;
+	width: 80px;
+	height: 44px;
+	color:white;
+	font-weight: bold;
+}
+/*以下设置手机京东和购物车的样式*/
+
+#top_main .logo_search .search .shopping,.myjd{
+	float: left;
+}
+
+#top_main .logo_search .search .shopping{
+	margin-left: 120px;
+}
+
+#top_main .logo_search .search .myjd{
+	margin-left: 10px;
+	margin-top: 12px
+}
+
+
+#hot_search{
+	margin-left: 350px;
+}
+
+#hot_search a{
+	color: black;
+	text-decoration: none;
+}
+
+/*此处为导航栏设置样式*/
+#nav{
+	border:1px solid transparent;
+	background-color:red; 
+	height: 40px;
+	font-size: 15px;
+}
+#nav>ul li{
+	border: 1px solid black;
+	float: left;
+	border: 0px solid black;
+	list-style: none;
+}
+
+/*设置导航中首页等样式*/
+#nav>ul li a{
+	color: white;
+	float: left;
+	text-decoration:none;
+	width: 100px;
+	height: 40px;
+	border: 0px solid black;
+	margin-top: -13px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#nav>ul li a:hover{
+	background-color:#bd2a2c;
+}
+
+/*设置商品分类以及下拉*/
+#nav p {
+	float: left;
+	width: 210px;
+	height: 40px;
+	border:1px solid transparent; 
+	margin-top:0px;
+	background-color: #cd292b;
+}
+
+/*导航中全部啥商品分类的样式*/
+#nav p>a{
+	float: left;
+	width: 190px;
+	border:0px solid black;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 15px;
+	text-decoration:none;
+	color:white;
+}
+/*设置全部商品分类的下拉样式*/
+#nav p>span{
+	float:right;
+	width: 20px;
+	height: 20px;
+	border:1px solid transparent;
+	background: url(Images/iconlist_2.png) no-repeat -65px 0px;
+	margin-top:-32px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#banner .cate_box{
+	margin-top: 0px;
+	position: relative;
+	left:-212px;
+	float: left;
+	width: 211px;
+	/*重点：box-sizing是使盒子固定所设宽高*/
+	box-sizing: border-box;
+	height: 450px;
+	border:2px solid #e4393c;
+	border-top: -3px;
+	border-right: 2px solid #ddd;
+}
+
+/*#cate_box>li{*/
+	/*属性 全部移植 给a元素*/
+/*}*/
+/*#cate_box>li:hover{*/
+	/*属性 全部移植给 a:hover*/
+/*}*/
+
+#banner ul.cate_box>li{
+	list-style: none;
+}
+
+/*<!-- 发现要操作a元素，只能将类放在ul中 -->*/
+/*配置分类内部的样式*/
+#banner ul.cate_box>li>a{
+	box-sizing: border-box;
+	display: block;
+	width:189px ;
+	text-decoration:none;
+	border:0px solid red;
+	margin-left:-20px;
+	height:20px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+
+#banner ul.cate_box>li>a:hover{
+	border:1px solid #ddd;
+	background-color: #fff;
+	border-right:none;
+}
+
+#banner .cate_box{
+	position: relative;
+}
+
+#banner ul.cate_box .sub_cate_box{
+	width: 719px;
+	height:449px;
+	border:1px solid red;
+	position: absolute;
+	left:208px;
+	top: -3px;
+	margin-top: 0px;
+	/*display: none;*/
+}
+/*--------------------------------------------*/
+/*这里是图书子类的样式，此处设置items盒子在sub_cate_box中靠右浮动*/
+#banner ul.cate_box .sub_cate_items{
+	width: 500px;
+	height: 449px;
+	float: left;
+	border:1px solid #ddd;
+}
+
+/*重点：ul可以设置边框样式*/
+#banner ul.cate_box .sub_cate_items ul{
+	/*此处是解决子元素浮动而造成的父元素高度塌陷*/
+	overflow: hidden;
+	border-top:1px solid #ddd;
+	width: 448px;
+	text-align: center;
+	margin-left:5px;
+	margin-top: 5px;
+
+
+
+}
+#banner ul.cate_box .sub_cate_items ul li{
+	float: left;
+	list-style:none;
+	border:1px solid transparent;
+	padding:10px 0px;
+	border-left:none;
+	border-right: none;
+	margin-top: 7px;
+
+}
+
+#banner ul.cate_box .sub_cate_items ul li a{
+	display: block;
+	border:0px solid red;
+	box-sizing: border-box;
+	text-decoration:none;
+	border-left:none;
+	padding:0px 6px;
+	margin-top:0px;
+	border-right: 1px solid #ddd;
+}
+
+/*-------------------------------------------------------------*/
+/*此处设置图书子类的图片广告*/
+/*重点：设置图片分段靠右展示，可用P标签包裹，再样式设置浮动*/
+#banner ul.cate_box .sub_cate_box .sub_cate_banner{
+	float: right;
+}
+#banner ul.cate_box .sub_cate_box .sub_cate_banner p>a{
+	text-decoration:none;
+}
+
+#banner ul.cate_box .sub_cate_box .sub_cate_banner p>a:hover{
+	text-decoration:underline;
+}
+/*--------------------------------------------------------------------*/
+/*此处设置X的图标*/
+#banner ul.cate_box .sub_cate_box .close{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 50%;
+	border:1px solid black;
+	text-align: center;
+	right: -10px;
+	top:-10px;
+	/*background-color: ;*/
+}
