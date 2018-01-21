@@ -867,7 +867,7 @@ ul.services_items a{
 
 #content .one_floor ul{
 	width: 1211px;
-	height: 45px;
+/*	height: 45px;*/
 	border:1px solid red;
 	float:left;
 	padding-left: 0px;
@@ -879,5 +879,9 @@ ul.services_items a{
 	float: left;
 	list-style:none;
 	border:1px solid black;
-	padding-right:95px;
+	width: 145px;
+	text-align: center;
+}
+#content .one_floor ul li:nth-child(1){
+	width: 33px;
 }
