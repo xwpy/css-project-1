@@ -671,7 +671,7 @@ ul.services_items a{
 
 #content{
 	position: relative;
-	left:277px;
+	/*left:277px;*/
 	margin: 0px auto;
 	width: 1250px;
 	/*height: 545px;*/
@@ -1136,7 +1136,7 @@ ul.services_items a{
 }
 
 #content .hot_order div.more div.bite_book{
-	width: 300px;
+	width: 320px;
 	height: 100px;
 	border:1px solid green;
 }
@@ -1146,6 +1146,7 @@ ul.services_items a{
 	margin-top: 5px;
 	float: right;
 	line-height: 20px;
+	margin-right: 24px;
 }
 
 #content .hot_order div.more div.bite_book ul li a{
@@ -1153,3 +1154,32 @@ ul.services_items a{
 }
 /*----------------------------------------------------------------*/
 /*设置订阅促销信息*/
+#content .hot_order div.more div.subscribe input{
+	display: block;
+	width: 240px;
+	height: 30px;
+}
+
+#content .hot_order div.more div.subscribe{
+	width: 320px;
+	border:1px solid red;
+	margin-top: 30px;
+}
+
+#content .hot_order div.more div.subscribe p.text{
+	font-size:15px;
+	font-weight: bold;
+}
+
+#content .hot_order div.more div.subscribe button{
+	width: 65px;
+	height: 35px;
+	float: right;
+	position: relative;
+	left: -4px;
+	top:-36px;
+	border-radius:15%;
+	background-color: red;
+	color:white;
+	font-weight:bold;
+}
